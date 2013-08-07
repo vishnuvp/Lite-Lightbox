@@ -1,0 +1,69 @@
+
+#ebox-overlay {
+  
+	background-color: rgba(0, 0, 0, 0.5);
+	float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+	left:0;
+	top:0;
+	
+}
+#ebox-container {
+ z-index: 1000;
+	background-color: #FFFFFF;
+	border:5px solid darkgray;
+	display: none;
+	float: left;
+	height: 90%;
+	margin: 3% 15%;
+	position: inherit;
+	top: 10px;
+	width: 70%;
+	
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 0 30px darkgray inset;
+	
+	-moz-border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 0 0 30px darkgray inset;
+	
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-webkit-box-shadow: 0 0 30px darkgray inset;
+}
+
+#ebox-x {
+float: right;
+margin-right: 1%;
+cursor: pointer;
+}
+#ebox-header #ebox-x:after {
+    content: "X";  
+	
+}
+#ebox-header, #ebox-content, #ebox-footer {
+
+    float: none;
+	width:90%;
+    margin: 1% auto 1% auto;
+	display: none;
+    
+}
+
+#ebox-header {
+	
+	 font-size: 2vw;
+
+}
+
+#ebox-content {
+
+text-align: center;
+vertical-align: middle;
+margin:  3% auto 0% auto;
+height: 85%;
+overflow: auto;
+}
