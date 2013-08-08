@@ -26,7 +26,7 @@ function launchBox(jQOb) {
 	}
 	
 	else if(extn == 'pdf') {
-			  addonMarkUp = '<object height="95%" width="100%" type="application/pdf" data="'+ filename +'" id="pdf_content"><p>PDF failed to load</p></object>';
+			  addonMarkUp = '<object height="95%" width="100%" type="application/pdf" data="'+ filename +'" id="pdf_content"><param value="'+ filename +'" name="src"/><param value="transparent" name="wmode"/><p>PDF failed to load</p></object>';
 	}
 	
 	var markUp = '<div id="ebox-overlay"><div id="ebox-container"><div id="ebox-header">' + title + '<span id="ebox-x"></span></div><div id="ebox-content">' + addonMarkUp + '</div><div id="ebox-footer"></div></div></div>';
